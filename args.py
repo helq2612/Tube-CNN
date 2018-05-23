@@ -11,7 +11,7 @@ from easydict import EasyDict as edict
 
 
 c3d_checkpoint = '../../../models/C3D_model/c3d.pickle'
-
+data_path = '/nfs/stak/users/heli/heli/datasets/data/jhmdb'
 __C = edict()
 # Consumers can get config by:
 #   from fast_rcnn_config import cfg

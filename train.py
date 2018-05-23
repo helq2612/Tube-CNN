@@ -17,12 +17,12 @@ import numpy as np
 import math
 from torch.optim import lr_scheduler
 from jhmdb_dataset import JHMDB_dataloader
-
+from args import data_path
 from tubeNet import TubeNet
 from logger import Logger
 
 
-dat, size3datasets, anchors_data =JHMDB_dataloader ('/nfs/stak/users/heli/heli/datasets/data/jhmdb')
+dat, size3datasets, anchors_data =JHMDB_dataloader (data_path)
 train = dat['train']
 test = dat['test']
 print(len(train),  len(test), size3datasets)
